@@ -1,6 +1,5 @@
 package com.sparta.interview.dto;
 
-import com.sun.istack.NotNull;
 import lombok.*;
 
 

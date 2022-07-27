@@ -45,7 +45,6 @@ public class UserService implements UserDetailsService {
 
     //@Transactional
     public User registerUser(SignupDto requestDto) {
-        System.out.println(requestDto.getPw());
         String loginId = requestDto.getLoginId();
         String password = requestDto.getPw();
         String passwordcheck = requestDto.getPwcheck();
@@ -69,7 +68,6 @@ public class UserService implements UserDetailsService {
 
         password = passwordEncoder.encode(requestDto.getPw());//비밀번호 암호화
         requestDto.setPw(password);//암호화된 비밀번호 set
-        System.out.println(password);
         User user = new User(loginId,password,username);
         userRepository.save(user);
         return user;

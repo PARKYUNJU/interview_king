@@ -4,6 +4,7 @@ package com.sparta.interview.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import java.util.List;
 
 import javax.persistence.*;
 

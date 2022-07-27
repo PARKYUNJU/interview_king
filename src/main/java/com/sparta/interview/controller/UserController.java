@@ -40,10 +40,8 @@ public class UserController {
             for (ObjectError error : errorList)
                 System.out.println(error.getDefaultMessage());
         }
-        System.out.println(requestDto.getPw());
 
         User user = userService.registerUser(requestDto);
-        System.out.println(user.getLoginId());
         return user;
     }
 }
